@@ -1,0 +1,155 @@
+﻿@charset "utf-8";
+/* =========================================================
+  download
+========================================================= */
+
+
+#checkList {
+	height: 70px;
+	width: 505px;
+	position: absolute;
+	left: 457px;
+	top: 0px;
+}
+
+#container_download {
+	min-width: 1000px;
+	text-align: left;
+	background-image: url(http://it-trend.jp/img/common/template/header_bg02.png);
+	background-repeat: repeat-x;
+	background-position: left 90px;
+}
+
+.space_01 {
+	height: 10px;
+	width: 730px;
+}
+
+.download_recomend_box {
+	height: auto;
+	width: 728px;
+	border: 1px solid #CCC;
+	margin-top: 7px;
+	float: left;
+	clear: both;
+	margin-bottom: 5px;
+}
+
+.download_recomend_logo {
+	height: 50px;
+	width: 50px;
+	border: 1px solid #CCC;
+	max-height: 50px;
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 20px;
+	float: left;
+}
+
+.mh50	{
+	 max-height:50px;
+	 max-width:50px;
+	}
+	
+.download_recomend_text {
+	width: 450px;
+	float: left;
+	font-weight: bold;
+	font-size: 1em;
+	line-height: 16px;
+
+}	
+
+.download_recomend_text2 {
+	width: 450px;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-size: 0.85em;
+	line-height: 14px;
+}
+
+.download_recomend_btn {
+	width: 109px;
+	float: right;
+	margin-top: 10px;
+	height: 20px;
+	background-color: #F6F6F6;
+	padding: 15px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.download_recomend_box2 {
+	height: auto;
+	width: 450px;
+	float: left;
+	margin-top: 10px;
+}	
+
+.download_recomend_logo_108 {
+	height: 108px;
+	width: 108px;
+	border: 1px solid #CCC;
+	max-height: 108px;
+	margin-right: 10px;
+	float: left;
+}
+
+.download_title_001 {
+	height: 20px;
+	width: 715px;
+	font-size: 1em;
+	padding-left: 15px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+
+/* 2014 8 22 */
+#dlpoSetImage .headlinebg {
+	clear: both;
+	width: 730px;
+	height: 43px;
+	background: url(/img/download/bg.png) 0 0 no-repeat;
+}
+
+#dlpoSetImage .recommendArea {
+	margin-bottom: 60px;
+}
+
+#dlpoSetImage .headlinebg h2 {
+	padding: 10px 0 0 25px;
+}
+
+#dlpoSetImage .linkbtn {
+	width: 730px;
+	padding: 30px 10px;
+}
+
+#dlpoSetImage .linkbtn li a {
+	display: block;
+	float: left;
+	width: 350px;
+	height: 100px;
+	text-indent: -9999px;
+	margin: 0;
+	padding: 0;
+}
+#dlpoSetImage .linkbtn li.btn01 a {
+	background: url(/img/download/btn1.png) 0 0 no-repeat;
+	margin-right: 10px;
+}
+#dlpoSetImage .linkbtn li.btn01 a:hover {
+	background: url(/img/download/btn1_over.png) 0 0 no-repeat;
+}
+#dlpoSetImage .linkbtn li.btn02 a {
+	background: url(/img/download/btn2.png) 0 0 no-repeat;
+}
+#dlpoSetImage .linkbtn li.btn02 a:hover {
+	background: url(/img/download/btn2_over.png) 0 0 no-repeat;
+}
+#dlpoSetImage .arrow {
+	padding-left: 15px;
+	background: url(/img/common/icon/icon_arrow.png) no-repeat 0 3px;
+}
