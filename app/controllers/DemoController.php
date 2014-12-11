@@ -18,7 +18,7 @@ class DemoController extends BaseController {
 	public function index()
 
 	{
-		$title =  "xin chào laravel";
+	/*	$title =  "xin chào laravel";
 		#selecy by query
 		$results = DB::select('select * from post where id = ?', array(1));
 		#using query buider
@@ -104,14 +104,45 @@ class DemoController extends BaseController {
 					->groupBy('id')
 					->get(); 
 		#insert records tinto table 
-		$post4 = DB::table('post')->insertGetId(
+		/*$post4 = DB::table('post')->insertGetId(
 			array('title' => 'john@example.com', 'content' => 'content','created'=> date('Y-m-d H:i:s'))
-		);
-		echo "<pre>";
-		print_r($post4);
-		echo "</pre>";
-		// update 
+		);*/
+
+		#####################################################################
+		#Eloquent ORM
+		#####################################################################
+
+	/*	$posts_model = Post::all();
+		foreach($posts_model as $key => $value) {
+			//echo $value->title;
+		}
+		// throw an exception
+		$posts_model = Post::findOrFail(1);
+
+		$posts_model = Post::where('id', '>', 1)->firstOrFail();
+		// count 
+		$posts_model = Post::where('id', '<', 10)->count();
+		//$posts_model = Post::whereRaw('id < ? and content IS NOT NULL', array(3))->get();
+*/
+		$posts_model = Post::where('id', '<', 10)->get();
+print_r($posts_model);
 		
+/*DB::table('post')->insert(
+    array('title' => 'jdoe',
+          'content' => 'john',
+          'created' => 'NOW()')
+);*/
+$logFile = 'laravel.log';
+$post = new Post;
+$post->id = null;
+$post->title = "taa";
+$post->content = "taa";
+$post->created = 'NOW()';
+$post->save();
+
+Log::useDailyFiles(storage_path().'/logs/'.$logFile);
+		// update 
+		$title = "sss";
 			
 		return View::make('demo.index')->with("title", $title);
 		
